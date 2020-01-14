@@ -1,10 +1,10 @@
 # Sunrider: Maska Arkadiusa
 Translation to PL of Sunrider: Mask of Arcadius
 
-Poniżej lista zmian w strukturze
-Folder
-|- Ponizsze foldery
-|--- Pliki ponizszego folderu
+Poniżej lista zmian w strukturze<br>
+Folder<br>
+|- Ponizsze foldery<br>
+|--- Pliki ponizszego folderu<br>
 |- Pliki folderu
 
 # Pliki - zmiany
