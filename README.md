@@ -12,6 +12,6 @@ Folder<br>
 <h3>\Menu</h3>
 <p>Dodano spolszczoną część grafik</p>
 <h3>\options.rpy</h3>
-<p>Zmienia on tylko nagłówek okna na spolszczony</p>
+<p>Zmienia on nagłówek okna na spolszczony oraz dodaje obsługę polskich znaków</p>
 <h3>\screens.rpy</h3>
 <p>Zmienia mapowanie w menu głównym by poprawnie się wyświetlało spolszczone</p>

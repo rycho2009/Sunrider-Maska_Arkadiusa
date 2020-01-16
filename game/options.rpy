@@ -9,6 +9,10 @@
 
 ## pretty much all copied from the Sunrider Demo
 
+## adding here polish signs
+init 2 python:
+    persistent.lang = "polish"
+    style.default.font = "DejaVuSans.ttf"
 init -1 python hide:
 
     ## Should we enable the use of developer tools? This should be
