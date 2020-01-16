@@ -15,4 +15,4 @@ Folder<br>
 <p>Zmienia on nagłówek okna na spolszczony oraz dodaje obsługę polskich znaków</p>
 <h3>\screens.rpy</h3>
 <p>Zmienia mapowanie w menu głównym by poprawnie się wyświetlało spolszczone</p>
-<p>W RAZIE SUGESTII ZAPRASZAM DO KONTAKTU NA DISCORDZIE rychoxs#0051</p>
+<p align=center>W RAZIE SUGESTII ZAPRASZAM DO KONTAKTU NA DISCORDZIE rychoxs#0051</p>
