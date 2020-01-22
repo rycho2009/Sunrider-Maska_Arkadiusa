@@ -3,7 +3,7 @@ label deleted_scene_1:
     play music "Music/The_Meteor.ogg"
     window show
 
-    asa "Przypis tłumacza:\n HCG (eng. Hentai Computer graphic) - Grafika komputerowa typu hentai"
+    "Przypis tłumacza:\n HCG (eng. Hentai Computer graphic) - Grafika komputerowa typu hentai"
     
     asa "Ah.  Ah.  Uh, czy ta rzecz działa?  Czy wszyscy widzą mnie wyraźnie?"
 
