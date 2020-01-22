@@ -11,6 +11,8 @@ Folder<br>
 <h2>game</h2>
 <h3>\Menu</h3>
 <p>Dodano spolszczoną część grafik</p>
+<h3>\deleted scenes.rpy</h3>
+<p>Zpolszcza scenę bonusową</p>
 <h3>\options.rpy</h3>
 <p>Zmienia on nagłówek okna na spolszczony oraz dodaje obsługę polskich znaków</p>
 <h3>\screens.rpy</h3>
