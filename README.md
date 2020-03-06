@@ -2,6 +2,8 @@
 Translation to PL of Sunrider: Mask of Arcadius
 
 Poniżej lista zmian w strukturze<br>
+
+Układ opisu:<br>
 Folder<br>
 |- Ponizsze foldery<br>
 |--- Pliki ponizszego folderu<br>
