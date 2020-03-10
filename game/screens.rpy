@@ -273,20 +273,20 @@ screen navigation:
 
         has vbox
 
-        textbutton _("Return") action Return()
-        textbutton _("Preferences") action ShowMenu("preferences")
-        textbutton _("Save Game") action ShowMenu("save")
-        textbutton _("Load Game") action ShowMenu("load")
+        textbutton _("Wróć") action Return()
+        textbutton _("Ustawienia") action ShowMenu("preferences")
+        textbutton _("Zapisz Grę") action ShowMenu("save")
+        textbutton _("Wczytaj Grę") action ShowMenu("load")
         textbutton _("Main Menu") action MainMenu()
-        textbutton _("Help") action Help()
-        textbutton _("Quit") action Quit()
+        textbutton _("Pomoc") action Help()
+        textbutton _("Wyjdź") action Quit()
 
 init -2 python:
     style.gm_nav_button.size_group = "gm_nav"
 
-    deletedScenes = BonusItem("Background/renpytomback.jpg", " Deleted Scenes", "deleted_scenes", 0.09)
+    deletedScenes = BonusItem("Background/renpytomback.jpg", " Usunięte sceny", "deleted_scenes", 0.09)
     # chapterSelect = BonusItem("CG/cera.jpg", " Chapter Select", "chapter_select", 0.09)
-    modScenes = BonusItem("CG/mochi1.jpg", " Addon Scene Select", "mod_scenes", 0.09)
+    modScenes = BonusItem("CG/mochi1.jpg", " Wybór dodatkowych scen", "mod_scenes", 0.09)
 
     bonus_features = [deletedScenes, modScenes]  #, chapterSelect]
 
@@ -340,7 +340,7 @@ screen bonus:
                         text bonus_features[i - 1].text
 
                     else:
-                        text str(i) + ". Unused Bonus"
+                        text str(i) + ". Niewykorzystany Bonus"
 
 ##############################################################################
 # Save, Load
@@ -422,7 +422,7 @@ screen load:
                             # Format the description, and add it as text.
                             $ description = "% 2s. %s\n%s" % (
                                 FileSlotName(i, columns * rows),
-                                FileTime(i, empty=_("Empty Slot.")),
+                                FileTime(i, empty=_("Pusty slot.")),
                                 FileSaveName(i))
 
                             text description
@@ -505,7 +505,7 @@ screen save:
                             # Format the description, and add it as text.
                             $ description = "% 2s. %s\n%s" % (
                                 FileSlotName(i, columns * rows),
-                                FileTime(i, empty=_("Empty Slot.")),
+                                FileTime(i, empty=_("Pusty slot.")),
                                 FileSaveName(i))
 
                             text description
@@ -664,11 +664,11 @@ screen yesno_prompt:
     imagemap:
         ground "Menu/yesno_menu.png"
 
-        textbutton _("Yes"):
+        textbutton _("Tak"):
             xalign 0.48
             yalign 0.57
             action yes_action
-        textbutton _("No"):
+        textbutton _("Nie"):
             xalign 0.58
             yalign 0.57
             action no_action
@@ -698,12 +698,12 @@ screen quick_menu:
 
         textbutton _("Q.Save") action QuickSave()
         textbutton _("Q.Load") action QuickLoad()
-        textbutton _("Save") action [ FileTakeScreenshot(), Show('save',transition=dissolve) ]
-        textbutton _("Load") action [ FileTakeScreenshot(), Show('load',transition=dissolve) ]
-        textbutton _("Skip") action Skip()
+        textbutton _("Zapisz") action [ FileTakeScreenshot(), Show('save',transition=dissolve) ]
+        textbutton _("Wczytaj") action [ FileTakeScreenshot(), Show('load',transition=dissolve) ]
+        textbutton _("Pomiń") action Skip()
         textbutton _("Auto") action Preference("auto-forward", "toggle")
-        textbutton _("Prefs") action [ FileTakeScreenshot(), Show('preferences',transition=dissolve) ]
-        textbutton _("M.Menu") action MainMenu()
+        textbutton _("Ust.") action [ FileTakeScreenshot(), Show('preferences',transition=dissolve) ]
+        textbutton _("Menu") action MainMenu()
 
 init -2 python:
     style.quick_button.set_parent('default')

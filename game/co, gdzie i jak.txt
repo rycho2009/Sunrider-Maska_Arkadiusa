@@ -1,0 +1,24 @@
+Foldery
+	zmieniona grafika na spolszczon¹
+deleted scenes.rpy
+	usunieta scena z asag¹
+screens custom.rpy
+	zosta³o zmienione kodowanie tooltipow w walkach, napisy po walce
+screens.rpy
+	zmienia mapowanie menu g³ównego, spalszcza bonusowe sceny, puste sloty zapisu i odczytu, tak/nie przy zamykaniu gry, pasek na dole ekranu
+options.rpy
+	zmienia kodowanie samej fabu³y na obs³ugê polskich znaków
+library.rpy
+	tooltipy w walce, itemki do ulepszenia z ekipy wyspy mining
+combatlabels.rpy
+	po zgonie na polu bitwy spalszcza przyciski
+upgrade.rpy
+	zmienia czcionke przez co poziomowanie jest ok oraz czesciowo spalszcza interface ulepszenia sunridera(nie jest skonczony wiec poki co nie jest na pendrive)
+classes.rpy
+	spalszcza elementy walki
+bonus menus.rpy
+	spalszcza interface przy wyborze scen bonusowych(czêœciowo)(mo¿e nazwy chapterów jeszcze s¹ do edycji)
+initialize.rpy
+	spalszcza nazwy trybów trudnoœci
+graphics inits.rpy 
+	spalszcza intro oraz napisy koncowe

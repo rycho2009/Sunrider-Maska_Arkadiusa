@@ -8,7 +8,6 @@
 ## appropriate.
 
 ## pretty much all copied from the Sunrider Demo
-
 ## adding here polish signs
 init 2 python:
     persistent.lang = "polish"
