@@ -1,4 +1,4 @@
-﻿# This file is in the public domain. Feel free to modify it as a basis
+# This file is in the public domain. Feel free to modify it as a basis
 # for your own screens.
 
 init -1 python hide:
@@ -365,7 +365,7 @@ screen load:
         $ BM = Battle()
         $ MasterBM = BM
     if (BM.phase == 'PACT' or BM.phase == 'Pirate'):
-        text 'WARNING! \n You can not load during the enemy \n turn.':
+        text 'UWAGA! \n Nie możesz wczytywać w trakcie tury\n przeciwnika.':
             xalign 0.5
             yalign 0.5
             size 35
@@ -447,7 +447,7 @@ screen save:
         $ BM = Battle()
         #No need to update the MasterBM if there is no battle manager to begin with.  Besides, the MasterBM and the BM might not be the same
     if (BM.phase == 'PACT' or BM.phase == 'Pirate'):
-        text 'WARNING! \n You can not save during the enemy \n turn.':
+        text 'UWAGA! \n Nie możesz zapisywać w trakcie tury\n przeciwnika.':
             xalign 0.5
             yalign 0.5
             size 35
@@ -553,14 +553,14 @@ screen preferences:
 
         hotspot (864, 59, 137, 44) action [ Hide('preferences'), Show('load', transition=dissolve) ]
         hotspot (726, 59, 137, 44) action [ Hide('preferences'), Show('save', transition=dissolve) ]
-        hotspot (1070, 130, 160, 50) action [ Hide('preferences'), Show('gameprefs', transition=dissolve) ]
+        hotspot (1078, 130, 160, 45) action [ Hide('preferences'), Show('gameprefs', transition=dissolve) ]
         hotspot (1140, 59, 137, 44) action MainMenu()
-        hotspot (820, 235, 100, 25) action Preference("display", "window")
-        hotspot (1035, 235, 180, 25) action Preference("display", "fullscreen")
-        hotspot (820, 340, 200, 25) action Preference("skip", "seen")
-        hotspot (1040, 340, 180, 25) action Preference("skip", "all")
-        hotspot (820, 410, 190, 25) action Preference("after choices", "skip")
-        hotspot (1040, 410, 220, 25) action Preference("after choices", "stop")
+        hotspot (840, 235, 60, 20) action Preference("display", "window")
+        hotspot (1035, 235, 125, 20) action Preference("display", "fullscreen")
+        hotspot (750, 340, 292, 20) action Preference("skip", "seen")
+        hotspot (1060, 340, 110, 20) action Preference("skip", "all")
+        hotspot (800, 410, 190, 20) action Preference("after choices", "skip")
+        hotspot (1018, 410, 200, 20) action Preference("after choices", "stop")
         hotspot (822, 470, 146, 15) action Skip(fast=True)
 
         hotspot (948, 926, 107, 23) action Hide('preferences', transition=dissolve)
@@ -615,22 +615,22 @@ screen gameprefs:
     
         hotspot (864, 59, 137, 44) action [ Hide('gameprefs'), Show('load', transition=dissolve) ]
         hotspot (726, 59, 137, 44) action [ Hide('gameprefs'), Show('save', transition=dissolve) ]
-        hotspot (750, 130, 160, 50) action [ Hide('gameprefs'), Show('preferences', transition=dissolve) ]
-        hotspot (750, 260, 250, 30) action SetVariable("Difficulty", 0)
-        hotspot (750, 340, 250, 30) action SetVariable("Difficulty", 1)
-        hotspot (750, 400, 250, 30) action SetVariable("Difficulty", 2)
-        hotspot (750, 460, 250, 30) action SetVariable("Difficulty", 3)        
-        hotspot (750, 540, 250, 30) action SetVariable("Difficulty", 4)        
-        hotspot (750, 600, 250, 30) action SetVariable("Difficulty", 5)
+        hotspot (750, 130, 180, 45) action [ Hide('gameprefs'), Show('preferences', transition=dissolve) ]
+        hotspot (750, 260, 350, 26) action SetVariable("Difficulty", 0)
+        hotspot (750, 339, 350, 26) action SetVariable("Difficulty", 1)
+        hotspot (750, 400, 350, 26) action SetVariable("Difficulty", 2)
+        hotspot (750, 460, 350, 26) action SetVariable("Difficulty", 3)        
+        hotspot (750, 538, 350, 26) action SetVariable("Difficulty", 4)        
+        hotspot (750, 598, 350, 26) action SetVariable("Difficulty", 5)
         
-        hotspot (785, 707, 50, 30) action SetField(BM, 'show_tooltips', True)  
-        hotspot (1000, 707, 80, 30) action SetField(BM, 'show_tooltips', False)
+        hotspot (796, 707, 36, 20) action SetField(BM, 'show_tooltips', True)  
+        hotspot (1014, 707, 34, 20) action SetField(BM, 'show_tooltips', False)
 
-        hotspot (785, 780, 50, 30) action SetField(BM, 'edgescroll', (100,800))
-        hotspot (1000, 780, 80, 30) action SetField(BM, 'edgescroll', (0,0)) 
+        hotspot (796, 780, 36, 20) action SetField(BM, 'edgescroll', (100,800))
+        hotspot (1014, 780, 34, 20) action SetField(BM, 'edgescroll', (0,0)) 
 
-        hotspot (785, 850, 50, 30) action SetField(BM, 'show_battle_log', True)
-        hotspot (1000, 850, 80, 30) action SetField(BM, 'show_battle_log', False)
+        hotspot (796, 850, 36, 20) action SetField(BM, 'show_battle_log', True)
+        hotspot (1014, 850, 34, 20) action SetField(BM, 'show_battle_log', False)
         
         hotspot (948, 926, 107, 23) action Hide('gameprefs', transition=dissolve)
 
