@@ -217,13 +217,13 @@ screen main_menu:
         insensitive "Menu/menu_inactive.jpg"
         hover "Menu/menu_hover.jpg"
 
-        hotspot (83, 405, 200, 50) action Show('campaigns', transition=dissolve)
-        hotspot (80, 472, 208, 50) action FileLoad("1", page="auto", confirm=False)
-        hotspot (100, 537, 185, 50) action ShowMenu('load')
-        hotspot (92, 598, 200, 50) action ShowMenu('preferences')
-        hotspot (138, 666, 151, 50) action ShowMenu('bonus')
-        hotspot (175, 730, 108, 50) action Quit()
-
+        hotspot (81, 412, 202, 43) action Show('campaigns', transition=dissolve)
+        hotspot (86, 472, 197, 43) action FileLoad("1", page="auto", confirm=False)
+        hotspot (100, 540, 183, 42) action ShowMenu('load')
+        hotspot (130, 605, 155, 35) action ShowMenu('preferences')
+        hotspot (175, 670, 108, 41) action ShowMenu('bonus')
+        hotspot (175, 732, 108, 45) action Quit()
+        
     text '[config.version]' xpos 0.01 ypos 0.98 size 12
 
     if CENSOR == False:
