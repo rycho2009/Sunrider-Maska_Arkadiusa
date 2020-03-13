@@ -223,7 +223,7 @@ screen main_menu:
         hotspot (130, 605, 155, 35) action ShowMenu('preferences')
         hotspot (175, 670, 108, 41) action ShowMenu('bonus')
         hotspot (175, 732, 108, 45) action Quit()
-        
+
     text '[config.version]' xpos 0.01 ypos 0.98 size 12
 
     if CENSOR == False:
@@ -244,8 +244,8 @@ screen campaigns:
         hover "Menu/mainmenu_campaign_hover.png"
         alpha False
         
-        hotspot (300, 385, 270, 40) action Start()
-        hotspot (300, 425, 280, 40) action Start("skiptomaskofarcadius")
+        hotspot (320, 385, 250, 42) action Start()
+        hotspot (320, 431, 260, 35) action Start("skiptomaskofarcadius")
         
 init -2 python:
 
