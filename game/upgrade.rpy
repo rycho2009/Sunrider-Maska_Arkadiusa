@@ -29,26 +29,26 @@ screen upgrade:
 
     #dictionaries are inherently unsorted, so this is needed ;_;
     $ upgrade_list = []
-    $ upgrade_list.append(["PODSTAWOWE -----------",None,None,None,None])
+    $ upgrade_list.append(["PODSTAWOWE -----",None,None,None,None])
     $ upgrade_list.append(ship.upgrades['max_hp'])
     $ upgrade_list.append(ship.upgrades['max_en'])
     $ upgrade_list.append(ship.upgrades['evasion'])
 #    $ upgrade_list.append(ship.upgrades['move_cost'])  #probably should be set individually in design
 
     if uses_kinetics:
-        $ upgrade_list.append(["KINETYCZNE -----------",None,None,None,None])
+        $ upgrade_list.append(["KINETYCZNE --------",None,None,None,None])
         $ upgrade_list.append(ship.upgrades['kinetic_dmg'])
         $ upgrade_list.append(ship.upgrades['kinetic_acc'])
         $ upgrade_list.append(ship.upgrades['kinetic_cost'])
 
     if uses_lasers:
-        $ upgrade_list.append(["LASEROWE -----------",None,None,None,None])
+        $ upgrade_list.append(["LASEROWE ----------",None,None,None,None])
         $ upgrade_list.append(ship.upgrades['energy_dmg'])
         $ upgrade_list.append(ship.upgrades['energy_acc'])
         $ upgrade_list.append(ship.upgrades['energy_cost'])
 
     if ship.max_missiles > 0:
-        $ upgrade_list.append(["MISSILE -----------",None,None,None,None])
+        $ upgrade_list.append(["RAKIETOWE ---------",None,None,None,None])
         $ upgrade_list.append(ship.upgrades['missile_dmg'])
         $ upgrade_list.append(ship.upgrades['missile_eccm'])
         $ upgrade_list.append(ship.upgrades['missile_cost'])
@@ -290,7 +290,7 @@ screen upgrade:
             ypos 0.7
             vbox:
                 if level < 18:
-                    label "Future costs:":
+                    label "Przyszłe koszty:":
                         right_padding 10
                         text_color '000'
                 for i in range(1,10):
