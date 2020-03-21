@@ -32,7 +32,7 @@ init -1 python hide:
     ## This controls the title of the window, when Ren'Py is
     ## running in a window.
 
-    config.name = "Sunrider: Maska Arcadiusa"
+    config.name = "Sunrider: Maska Arkadiusa"
     config.version = " Beta 7.2"
     config.window_title = config.name+config.version
 
