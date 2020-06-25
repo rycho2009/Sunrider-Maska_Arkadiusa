@@ -25,5 +25,5 @@ Folder<br>
 <BR>
 <p align=center>W RAZIE SUGESTII ZAPRASZAM DO KONTAKTU NA DISCORDZIE rychoxs#0051</p>
   
-<p align=center>GRUPA FRTRANSLATE na <a href=http://frtranslations.prv.pl/>discordzie</a></p>
+<p align=center>GRUPA FRTRANSLATE na <a href=http://frtranslations.prv.pl/>stronie internetowej</a> oraz <a href=https://discord.gg/SadU8pC>discordzie</a></p>
   
