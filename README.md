@@ -21,6 +21,9 @@ Folder<br>
 <p>Zmienia mapowanie w menu głównym by poprawnie się wyświetlało spolszczone</p>
 <h2>renpy</h2>
 <h3>\common</h3>
-<p>Zpolszcza on podstawowe zwroty zawarte w silniku gry jak np. "wyjdź z gry"</p>
+<p>Spalszcza on podstawowe zwroty zawarte w silniku gry jak np. "wyjdź z gry"</p>
 <BR>
 <p align=center>W RAZIE SUGESTII ZAPRASZAM DO KONTAKTU NA DISCORDZIE rychoxs#0051</p>
+  
+<p align=center>GRUPA FRTRANSLATE na <a href=http://frtranslations.prv.pl/>discordzie</a></p>
+  
